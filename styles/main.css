@@ -341,6 +341,107 @@ body {
 }
 
 /* ============================================
+   SLIDE · APP PREVIEW
+   ============================================ */
+/* Shared text elements */
+.pv-step {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #b8962e;
+  margin-bottom: 8px;
+}
+
+.pv-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a2744;
+  margin-bottom: 5px;
+}
+
+.pv-desc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.65;
+}
+
+/* Featured full-width screenshot */
+.pv-featured {
+  margin-bottom: 64px;
+}
+
+.pv-featured--last {
+  margin-bottom: 0;
+}
+
+.pv-featured img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 22px;
+}
+
+.pv-featured__meta {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 2px;
+}
+
+.pv-featured__meta .pv-step {
+  margin-bottom: 0;
+  padding-top: 1px;
+  flex-shrink: 0;
+}
+
+/* Card grid */
+.pv-grid {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 64px;
+}
+
+.pv-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.pv-grid--2 { grid-template-columns: repeat(2, 1fr); }
+
+.pv-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pv-card__img {
+  background-color: #f0f2f5;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pv-grid--2 .pv-card__img { height: 250px; }
+
+.pv-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 16px;
+}
+
+.pv-card__body {
+  background-color: #f8fafc;
+  padding: 18px 20px 22px;
+  border-top: 2px solid #1a2744;
+  flex: 1;
+}
+
+/* ============================================
    SLIDE 4 — MARKET
    ============================================ */
 .market-grid {
