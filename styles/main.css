@@ -777,3 +777,226 @@ body {
   font-size: 11px;
   color: rgba(255,255,255,0.18);
 }
+
+/* ============================================
+   RESPONSIVE — TABLET (≤ 768px)
+   ============================================ */
+@media (max-width: 768px) {
+
+  /* Slide shell */
+  .slide__inner {
+    padding: 56px 28px;
+  }
+
+  .slide__title {
+    font-size: 26px;
+  }
+
+  .slide__desc {
+    margin-bottom: 32px;
+  }
+
+  /* Cover */
+  .cover__top {
+    padding: 20px 28px;
+  }
+
+  .cover__body {
+    padding: 52px 28px;
+  }
+
+  .cover__hero {
+    gap: 20px;
+  }
+
+  .cover__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+  }
+
+  .cover__title {
+    font-size: 40px;
+    letter-spacing: -0.5px;
+  }
+
+  .cover__bottom {
+    padding: 20px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cover__nav {
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+
+  /* Overview */
+  .overview__layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  /* Features table — horizontal scroll */
+  .features-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .features-table__row {
+    min-width: 580px;
+  }
+
+  /* App preview */
+  .pv-grid--3,
+  .pv-grid--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .pv-card__img {
+    height: 240px;
+  }
+
+  .pv-grid--2 .pv-card__img {
+    height: 240px;
+  }
+
+  .pv-card--horizontal {
+    flex-direction: column;
+  }
+
+  .pv-card--horizontal .pv-card__img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .pv-card--horizontal .pv-card__body {
+    border-left: none;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  /* Market */
+  .market-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Revenue table — horizontal scroll */
+  .revenue-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .revenue-table__row {
+    min-width: 620px;
+  }
+
+  /* Roadmap */
+  .roadmap {
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px 24px;
+  }
+
+  .roadmap__arrow {
+    display: none;
+  }
+
+  /* Investment table — horizontal scroll */
+  .invest-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .invest-table__row {
+    min-width: 500px;
+  }
+
+  /* Closing */
+  .closing__body {
+    padding: 56px 28px;
+  }
+
+  .closing__title {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+
+  .closing__footer {
+    padding: 20px 28px;
+    flex-wrap: wrap;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE PHONES (≤ 480px)
+   ============================================ */
+@media (max-width: 480px) {
+
+  /* Slide shell */
+  .slide__inner {
+    padding: 44px 20px;
+  }
+
+  .slide__title {
+    font-size: 22px;
+  }
+
+  /* Cover */
+  .cover__top {
+    padding: 18px 20px;
+  }
+
+  .cover__body {
+    padding: 44px 20px;
+  }
+
+  .cover__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 11px;
+  }
+
+  .cover__title {
+    font-size: 32px;
+  }
+
+  .cover__sub {
+    font-size: 15px;
+  }
+
+  .cover__bottom {
+    padding: 18px 20px;
+  }
+
+  .cover__nav {
+    display: none;
+  }
+
+  /* KPI — single column */
+  .kpi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kpi__num {
+    font-size: 24px;
+  }
+
+  /* Market — single column */
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Closing */
+  .closing__body {
+    padding: 44px 20px;
+  }
+
+  .closing__title {
+    font-size: 26px;
+  }
+
+  .closing__footer {
+    padding: 18px 20px;
+  }
+}
